@@ -1,29 +1,16 @@
-# You can override the included template(s) by including variable overrides
-# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/user/application_security/secret_detection/pipeline/configure
-# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
-# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
-# Note that environment variables can be set in several places
-# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
-stages:
-- test
-- secret-detection
-variables:
-  SECRET_DETECTION_ENABLED: 'true'
-secret_detection:
-  stage: secret-detection
-include:
-- template: Security/Secret-Detection.gitlab-ci.yml
-
-image: node:25
-
-pages:
-  script:
+# The Docker image that will be used to build your app
+image: node:lts
+create-pages:
+  pages:
+    # The folder that contains the files to be exposed at the Page URL
+    publish: .vitepress/dist/
+  rules:
+    # This ensures that only pushes to the default branch will trigger
+    # a pages deploy
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+  # Functions that should be executed before the build script is run
+  before_script:
     - npm i -g pnpm
     - pnpm i
+  script:
     - pnpm run docs:build
-  artifacts:
-    paths:
-      - .vitepress/dist/
-  only:
-    - pages
