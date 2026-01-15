@@ -14,6 +14,10 @@ home: true
 
 このウェブサイトは [VitePress](https://vitepress.dev/) という SSG フレームワークを利用しています。
 
+この [ウェブサイトのソースコード](https://gitlab.com/k_chimi/k_chimi.gitlab.io/) は [GitLab](https://gitlab.com) でホスティングされています。
+
+このウェブサイトは [GitLab Pages](https://docs.gitlab.com/user/project/pages/) を利用してデプロイしています。
+
 ## 開発したもの一覧
 
 *K Chimi* が趣味などで作成したもの。
