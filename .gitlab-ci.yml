@@ -25,5 +25,5 @@ pages:
   artifacts:
     paths:
       - .vitepress/dist/
-    only:
-      - pages
+  only:
+    - pages
