@@ -1,0 +1,30 @@
+@import "modern-normalize/modern-normalize.css";
+
+:root {
+  --color-bg: 235 240 240;
+  --color-light: 255 255 255;
+  --color-shadow: 0 0 0;
+
+  --color-accent: 0 255 255;
+
+  --color-text: 5 5 5;
+
+  --screen-w-large: 1024px;
+}
+
+html {
+  font-family: Arial, Helvetica, sans;
+
+  background: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+}
+
+body {
+  min-height: 100vh;
+
+  box-shadow: inset 0 0 0.5rem 0.125rem rgb(var(--color-shadow) / 0.1);
+}
+
+@view-transition {
+  navigation: auto;
+}
