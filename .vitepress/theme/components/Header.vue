@@ -128,7 +128,13 @@ watch(() => props.pathname, console.log)
     user-select: none;
 
     &[data-is-current-path="true"] {
-      background-color: color-mix(in srgb, rgb(var(--color-light) / 0.65), rgb(var(--color-accent) / 0.15));
+      background-color:
+        color-mix(
+          in srgb
+        , rgb(var(--color-light) / 0.65)
+        , rgb(var(--color-accent) / 0.15)
+        )
+        ;
     }
 
     &:hover {      

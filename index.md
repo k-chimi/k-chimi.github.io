@@ -10,9 +10,9 @@ home: true
 
 主に `TypeScript (Preact / Vue / Fastify), Golang, Python3` を使ってプログラミングをしています。
 
-エディターは [Helix](https://helix-editor.com/) が好みです。
+エディターは [Helix](https://helix-editor.com/) を主に使っています。
 
-このウェブサイトは [VitePress](https://vitepress.dev/) という SSG フレームワークを利用しています。
+このウェブサイトは [VitePress](https://vitepress.dev/) と [Vue.js](https://vuejs.org/) を利用して作成しています。
 
 この [ウェブサイトのソースコード](https://gitlab.com/k_chimi/k_chimi.gitlab.io/) は [GitLab](https://gitlab.com) でホスティングされています。
 

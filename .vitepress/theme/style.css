@@ -12,11 +12,27 @@
   --screen-w-large: 1024px;
 }
 
+@keyframes bg-anim {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 4rem 4rem;
+  }
+}
+
 html {
   font-family: Arial, Helvetica, sans;
 
-  background: rgb(var(--color-bg));
+  background-image:
+    linear-gradient(to bottom, transparent 95%, color-mix(in srgb, rgb(var(--color-bg)), rgb(var(--color-shadow) / 0.1)) 100%),
+    linear-gradient(to left, rgb(var(--color-bg)) 95%, color-mix(in srgb, rgb(var(--color-bg)), rgb(var(--color-shadow) / 0.1)) 100%);
+
+  background-size: 4rem 4rem;
   color: rgb(var(--color-text));
+
+  animation: 5s bg-anim 0s infinite linear;
 }
 
 body {
