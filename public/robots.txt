@@ -1,9 +1,15 @@
-User-agent: Googlebot
-User-agent: Bingbot
-User-agent: YandexBot
-User-agent: Applebot
-User-agent: DuckDuckBot
-User-agent: Baiduspider
-User-agent: Slurp
 Content-Signal: ai-train=yes, search=no, ai-input=yes
+User-agent: Googlebot
+Disallow: /
+User-agent: Bingbot
+Disallow: /
+User-agent: YandexBot
+Disallow: /
+User-agent: Applebot
+Disallow: /
+User-agent: DuckDuckBot
+Disallow: /
+User-agent: Baiduspider
+Disallow: /
+User-agent: Slurp
 Disallow: /
