@@ -1,6 +1,4 @@
 Content-Signal: ai-train=yes, search=no, ai-input=yes
-User-agent: Googlebot
-Disallow: /
 User-agent: Bingbot
 Disallow: /
 User-agent: YandexBot
