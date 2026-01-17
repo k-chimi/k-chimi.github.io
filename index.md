@@ -2,6 +2,10 @@
 home: true
 ---
 
+<script setup>
+import Pictures from "./.vitepress/components/Pictures.vue";
+</script>
+
 <h1><p align="center">
 <i>K Chimi</i> のホームページ
 </p></h1>
@@ -18,7 +22,7 @@ home: true
 
 このウェブサイトは [GitLab Pages](https://docs.gitlab.com/user/project/pages/) を利用してデプロイしています。
 
-## 開発したもの一覧
+## 開発したもの
 
 *K Chimi* が趣味などで作成したもの。
 
@@ -37,9 +41,20 @@ home: true
   - バックエンドではクリーンアーキテクチャを意識した開発に挑戦
   - フロントエンドでは `marked.js` から `Vue` の `VNode` を生成することでメモの内容を描画
 
+<Pictures>
+  <img src="https://gitlab.com/k_chimi/noteput/-/raw/main/docs/screenshot0.png" />
+  <img src="https://gitlab.com/k_chimi/noteput/-/raw/main/docs/screenshot1.png" />
+  <img src="https://gitlab.com/k_chimi/noteput/-/raw/main/docs/screenshot2.png" />
+</Pictures>
+
 ### Soy
 
 [ソースコードを見る](https://gitlab.com/k_chimi/soy)
 
 - **説明**
   - `Golang` で実装した最低限の機能を揃えた `Python3` 用のパッケージマネージャーの実装
+
+<Pictures>
+  <img src="/soy_screenshot_0.png" />
+  <img src="/soy_screenshot_1.png" />
+</Pictures>

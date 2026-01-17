@@ -26,10 +26,13 @@ const { route } = useRouter();
   .content-wrapper {
     display: flex;
     justify-content: center;
+    max-width: 100vw;
+    padding: 0 1rem;
   }
 
   .content {
-    padding: 0 1rem;
+    padding-bottom: 50vh;
+    max-width: 100%;
   }
 
   .center {
