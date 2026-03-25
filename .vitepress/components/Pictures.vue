@@ -13,6 +13,8 @@ function scrollLeft() {
         
     const left = e.offsetLeft - pictures.offsetLeft;
 
+    console.log(left, pictures.scrollLeft)
+
     if (left < pictures.scrollLeft) {
       pictures.scrollTo({
         behavior: "smooth",
@@ -31,7 +33,7 @@ function scrollRight() {
   for (const e of [...pictures.children]) {
     if (!(e instanceof HTMLElement)) continue;
         
-    const left = e.offsetLeft - pictures.offsetLeft;
+    const left = e.offsetLeft - pictures.offsetLeft - pictures.clientLeft;
 
     if (left > pictures.scrollLeft) {
       pictures.scrollTo({
@@ -108,6 +110,8 @@ function scrollRight() {
     overflow-y: hidden;
 
     scroll-snap-type: x mandatory;
+
+    border: solid 1px black;
   }
 
   .pictures :slotted(img) {

@@ -1,60 +1,62 @@
 ---
 home: true
+"@graph":
+  - "@context": "https://schema.org"
+    "@type": Person
+    "@id": "#k-chimi"
+    name: K-Chimi
+    description: |-
+      プログラミングや技術に関心があるホモサピエンス、TypeScript や Golang を主に書いています。
+
+      趣味はプログラミング、主に Web 技術周辺を触ることが多い、エディタは Helix を使ってます。
+    knowsLanguage: ja
+    sameAs:
+      - "https://github.com/k-chimi"
+
+  - "@context": "https://schema.org"
+    "@type": ProfilePage
+    "mainEntity": { "@id": "#k-chimi" }
 ---
 
 <script setup>
+import TopPageTitle from "./.vitepress/components/TopPageTitle.vue";
+import SectionWindow from "./.vitepress/components/SectionWindow.vue";
 import Pictures from "./.vitepress/components/Pictures.vue";
 </script>
 
-<h1><p align="center">
-<i>K Chimi</i> のホームページ
-</p></h1>
+## 概要
 
-*K Chimi* のホームページへようこそ！
+<div class="center">
+<SectionWindow>
+  <dl>
+    <dt> 私について </dt>
+<dd>
 
-主に `TypeScript (Preact / Vue / Fastify), Golang, Python3` を使ってプログラミングをしています。
+プログラミングや技術について関心があるホモサピエンス、TypeScript や Golang を主に書いています。
 
-エディターは [Helix](https://helix-editor.com/) を主に使っています。
+- [Github: @k-chimi](https://github.com/k-chimi)
 
-このウェブサイトは [VitePress](https://vitepress.dev/) と [Vue.js](https://vuejs.org/) を利用して作成しています。
+</dd>
+    <dt> なにがすきー？ </dt>
+<dd>
 
-この [ウェブサイトのソースコード](https://gitlab.com/k_chimi/k_chimi.gitlab.io/) は [GitLab](https://gitlab.com) でホスティングされています。
+チョコミンｔ(ry
 
-このウェブサイトは [GitLab Pages](https://docs.gitlab.com/user/project/pages/) を利用してデプロイしています。
+フリーソフト好きが高じて OSS を追っかけるように。<br/>
+Web 周辺について触れていることが多く、最近では Golang を書くことが多くなっています。
 
-## 開発したもの
+エディタは [Helix](https://helix-editor.com/) を使っており、人間に優しい軽量なソフトを欲しがります。
 
-*K Chimi* が趣味などで作成したもの。
+</dd>
+    <dt> このサイトについて </dt>
+<dd>
 
-### Noteput
+このウェブサイトは [VitePress](https://vitepress.dev/) と [Vue.js](https://vuejs.org/) を利用して作成しています。<br/>
+<!-- デプロイには [GitLab Pages](https://docs.gitlab.com/user/project/pages/) を利用しています。 -->
 
-[ソースコードを見る](https://gitlab.com/k_chimi/noteput)
+このサイト上で利用できるコンテンツについては第三者の著作物の引用や特殊な注釈が無い限り [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) として公開するものとします。
 
-- **説明**
-  - Markdown ベースの短いメモを複数記録するための Web サービス
-- **技術スタック**
-  - フロントエンドは `TypeScript (Vue / Pinia / Nuxt / ...)` を用いて開発
-  - バックエンドは `TypeScript (Fastify / Zod / MikroORM / BullMQ / Tsyringe / ...)` を用いて開発
-  - 認証・認可サーバーは `Keycloak` を採用
-  - データベースは `Postgres` と `Redis` を採用
-- **その他**
-  - バックエンドではクリーンアーキテクチャを意識した開発に挑戦
-  - フロントエンドでは `marked.js` から `Vue` の `VNode` を生成することでメモの内容を描画
-
-<Pictures>
-  <img src="https://gitlab.com/k_chimi/noteput/-/raw/main/docs/screenshot0.png" />
-  <img src="https://gitlab.com/k_chimi/noteput/-/raw/main/docs/screenshot1.png" />
-  <img src="https://gitlab.com/k_chimi/noteput/-/raw/main/docs/screenshot2.png" />
-</Pictures>
-
-### Soy
-
-[ソースコードを見る](https://gitlab.com/k_chimi/soy)
-
-- **説明**
-  - `Golang` で実装した最低限の機能を揃えた `Python3` 用のパッケージマネージャーの実装
-
-<Pictures>
-  <img src="/soy_screenshot_0.png" />
-  <img src="/soy_screenshot_1.png" />
-</Pictures>
+</dd>
+    </dl>
+</SectionWindow>
+</div>

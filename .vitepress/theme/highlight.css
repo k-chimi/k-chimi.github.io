@@ -1,0 +1,98 @@
+@import "vitepress/dist/client/theme-default/styles/components/vp-code.css";
+@import "vitepress/dist/client/theme-default/styles/components/vp-code-group.css";
+
+@counter-style codeblock-linenum {
+  system: cyclic;
+  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+  pad: "0";
+}
+
+div[class="VPDoc"] p>code {
+  background: #eee;
+
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+div[class*="language-"] {
+  background: #222;
+
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  --codeblock-text-color: #ddd;
+
+  --codeblock-sep: rgba(255 255 255 / 0.25);
+
+  --codeblock-hover: rgba(255 128 64 / 0.25);
+  --codeblock-active: rgba(255 128 64 / 0.5);
+
+  .lang {
+    color: var(--codeblock-text-color);
+    padding-left: 0.5rem;
+  }
+
+  .copy {
+    opacity: 0;
+    transition: opacity 0.25s linear;
+    float: right;
+
+    background: transparent;
+    color: var(--codeblock-text-color);
+
+    border: 0;
+
+    position: relative;
+
+    &::before {
+      content: 'copy';
+    }
+
+    &::after {
+      opacity: 0;
+      transition: opacity 0.125s linear;
+
+      position: absolute;
+      left: calc(-100% - 0.5rem);
+
+      content: 'copied';
+    }
+
+    &.copied::after {
+      opacity: 1;
+    }
+
+    &:hover {
+      background: var(--codeblock-hover);
+    }
+
+    &:active {
+      background: var(--codeblock-active);
+    }
+  }
+
+  &:hover .copy {
+    opacity: 1;
+  }
+
+  &>pre {
+    border-top: solid 1px var(--codeblock-sep);
+    margin: 0;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+
+    counter-reset: codeblock-lines 1;
+
+    .line {
+      counter-increment: codeblock-lines 1;
+
+      &::before {
+        opacity: 0.5;
+        color: var(--codeblock-text-color);
+        content: counter(codeblock-lines, codeblock-linenum);
+
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
