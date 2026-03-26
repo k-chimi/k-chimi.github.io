@@ -8,6 +8,7 @@ import { data as posts } from "./.vitepress/datas/posts.data.ts";
 
 ## 最近の記事
 
+<section class="articles">
 <template v-for="post in posts">
 	<a class="article-link" :href="post.url">
 		<article class="article-thumbnail">
@@ -20,8 +21,16 @@ import { data as posts } from "./.vitepress/datas/posts.data.ts";
 		</article>
 	</a>
 </template>
+</section>
 
 <style scoped>
+.articles {
+	display: flex;
+	flex-direction: column;
+
+	gap: 2rem;
+}
+
 .article-link {
 	text-decoration: none;
 	color: inherit;
