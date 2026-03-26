@@ -1,0 +1,62 @@
+==================================================================
+https://keybase.io/k_chimi
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://k-chimi.github.io
+  * I am k_chimi (https://keybase.io/k_chimi) on keybase.
+  * I have a public key with fingerprint B9CC 1CE9 9E1A AB9C C76E  6A6E 9E39 00A5 8493 B151
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "011625541706cddc6b6f0021c75556dfef1df5c3ac361a031268fc80e1a26fcb91730a",
+      "fingerprint": "b9cc1ce99e1aab9cc76e6a6e9e3900a58493b151",
+      "host": "keybase.io",
+      "key_id": "9e3900a58493b151",
+      "kid": "011625541706cddc6b6f0021c75556dfef1df5c3ac361a031268fc80e1a26fcb91730a",
+      "uid": "ad6008920245d817ef51e61bf9395219",
+      "username": "k_chimi"
+    },
+    "service": {
+      "hostname": "k-chimi.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1774531280,
+  "expire_in": 157680000,
+  "prev": "e356d2d311e83c30c28b44ff355231d7283ea399539d524341704e1a09f327e6",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkj9oFEEUxvc0QXIoRJQUYgQfChZrmD87sztb21jaiIXxmJ15eze5ZPeyu3ca
+QgpRIY0gCCKJpEulTbASNFbBIla2doJF7OzsInN6naXV8Ibf+973Pd6zMyeD9tyO
+CnYfP9+71To8ygJ3wLfWISvtGqTr0Mfxg8sW66bTdxZSIJRKJkREYyKNtUZmMieE
+URMLIaTNMac2F4ZrwyXVhFMmk9wkBKlmMjeZojEnGkLIXdHFalC5ooEUMmUMNagU
+Uq19EUuUWqJCrgjRIokUz6igEEKvrH1HH9cyXeOCKyH0RWds7x/8f/Y9HMtpKwlJ
+FCMsEjahMeaCoqRZrrgSjCoP1lgVegW9147puRUHGyHUWI2cQb9XH2QCXB8DC13X
+9IbZn0yDqmxKUy5DCr2mGdSpb2/WBp6/j1nnr1Inc4V1RRdCGGFVu7KAlG6EYBrn
+pWkcR4JTlpAQ8MHAVdhxnhCxTAghxM/BEaSAXNyVlllOKSbccGJYkkVRnnMhGKc2
+ZglHzZUSXFnBIu5XGSHVROWcxSjBh1stSkh5CI3uQgq16xa6GVYIG+3N4VQw1w7m
+5y5Pvft88WjnwutXn4qlYnJ+0yf87QXtmdnJz9bZ4Nh8O9y/2Xo4+4tvR8cvP9x5
+31qcv2du/3g0+rL3ovt2qRXsP9n9fnV1evP8pejg9M+vN8RH09p8M3p6rXXl3OL2
+qZnf
+=lEWT
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/k_chimi
+
+==================================================================
