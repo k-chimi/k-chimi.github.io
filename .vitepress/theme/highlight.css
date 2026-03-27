@@ -21,6 +21,7 @@ div[class*="language-"] {
   border-radius: 0.5rem;
 
   --codeblock-text-color: #ddd;
+  --shiki-light: var(--codeblock-text-color);
 
   --codeblock-sep: rgba(255 255 255 / 0.25);
 
