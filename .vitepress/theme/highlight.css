@@ -22,6 +22,7 @@ div[class*="language-"] {
 
   --codeblock-text-color: #ddd;
   --shiki-light: var(--codeblock-text-color);
+  --shiki-dark: var(--codeblock-text-color);
 
   --codeblock-sep: rgba(255 255 255 / 0.25);
 
